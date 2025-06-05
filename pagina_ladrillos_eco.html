@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ladrillos Ecológicos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #222222;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #111;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      z-index: 999;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    header {
+      height: 100vh;
+      background: linear-gradient(to bottom right, #f9fafb, #e2e8f0);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-top: 80px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #1a202c;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      color: #4a5568;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #2d3748;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .about, .why, .contact, .testimonials {
+      background-color: #f7fafc;
+      padding: 40px;
+      border-radius: 16px;
+      margin-bottom: 60px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .product-card {
+      background-color: #edf2f7;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .contact form {
+      display: grid;
+      gap: 20px;
+    }
+
+    .contact input, .contact textarea {
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #cbd5e0;
+      font-size: 1rem;
+    }
+
+    .contact button {
+      background-color: #2b6cb0;
+      color: white;
+      padding: 15px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    footer {
+      background-color: #1a202c;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div><strong>Ladrillos Eco</strong></div>
+    <div>
+      <a href="#about">Nosotros</a>
+      <a href="#products">Productos</a>
+      <a href="#why">¿Por qué?</a>
+      <a href="#contact">Contacto</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Ladrillos Ecológicos</h1>
+    <p>Construcción inteligente, sostenible y moderna. Bienvenido a la nueva era de la arquitectura ecológica.</p>
+  </header>
+
+  <section id="about" class="about">
+    <h2>Sobre Nosotros</h2>
+    <p>Ofrecemos soluciones constructivas que respetan el medio ambiente. Nuestros ladrillos están hechos con tierra comprimida, reduciendo el uso de cemento y emisiones.</p>
+  </section>
+
+  <section id="products" class="products">
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1600522363878-cfbf7a8a3760" alt="Ladrillo tipo LEGO">
+      <h3>Ladrillos LEGO</h3>
+      <p>Montaje rápido, sin mortero. Perfecto para proyectos innovadores.</p>
+    </div>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1560184897-7f245aa6e284" alt="Adoquines ecológicos">
+      <h3>Adoquines</h3>
+      <p>Ideales para exteriores. Estética natural y ecológica.</p>
+    </div>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1620050798149-157c848df61c" alt="Ladrillos estándar">
+      <h3>Ladrillos clásicos</h3>
+      <p>Versatilidad y firmeza para todo tipo de obras.</p>
+    </div>
+  </section>
+
+  <section id="why" class="why">
+    <h2>¿Por qué elegirnos?</h2>
+    <ul>
+      <li>Materiales naturales y reutilizables</li>
+      <li>Reducción de emisiones</li>
+      <li>Diseño limpio y modular</li>
+      <li>Facilidad de ensamblaje</li>
+    </ul>
+  </section>
+
+  <section class="testimonials">
+    <h2>Opiniones</h2>
+    <p>“Fácil de usar, rápido de construir y se ve increíble. ¡Los recomiendo!” – Andrea P.</p>
+    <p>“La solución perfecta para una construcción ecológica.” – EcoConstructora XYZ</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contáctanos</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre" required />
+      <input type="email" placeholder="Tu correo electrónico" required />
+      <textarea rows="5" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ladrillos Ecológicos. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
